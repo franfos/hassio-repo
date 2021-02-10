@@ -34,7 +34,7 @@
   },
   "options": {
     "global": {
-      "instanceName": "changeme",
+      "instanceName": "cambio",
       "integrations": [
         "homeAssistant"
       ]
