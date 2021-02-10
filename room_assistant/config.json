@@ -6,7 +6,6 @@
   "url": "https://www.room-assistant.io",
   "stage": "stable",
   "advanced": false,
-  "startup": "application",
   "arch": [
     "aarch64",
     "amd64",
@@ -15,7 +14,6 @@
     "i386"
   ],
   "image": "mkerix/room-assistant-{arch}",
-  "boot": "auto",
   "services": [
     "mqtt:want"
   ],
