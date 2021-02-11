@@ -83,7 +83,7 @@
       "timeout": "int(1,)?",
       "updateFrequency": "int(0,)?",
       "maxDistance": "int?",
-      "whitelist": ["str?"],
+      "whitelist": ["str?"]
     },
     "bluetoothClassic": {
       "addresses": ["str?"],
