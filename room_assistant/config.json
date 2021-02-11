@@ -36,7 +36,7 @@
   },
   "options": {
     "global": {
-      "instanceName": "changeme",
+      "instanceName": "mio",
       "integrations": [
         "homeAssistant"
       ]
