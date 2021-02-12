@@ -46,14 +46,17 @@
     },
     "bluetoothLowEnergy": {
       "allowlist": [],
-      "denylist": []
+      "denylist": [],
+      "whitelist": []
     },
     "bluetoothClassic": {
       "addresses": []
     },
     "omronD6t": {},
     "gridEye": {},
-    "homeAssistant": {}
+    "homeAssistant": {
+      "mqttOptions": []
+    }
   },
   "schema": {
     "global": {
