@@ -108,8 +108,8 @@
       "mqttUrl": "str?",
       "sendAttributes": "bool?",
       "mqttOptions": {
-        "username": ["str"],
-        "password": ["str?"]
+        "username": "str",
+        "password": "str?"
       }
     }
   }
