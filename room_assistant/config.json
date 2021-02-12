@@ -109,13 +109,7 @@
     },
     "homeAssistant": {
       "mqttUrl": "str?",
-      "sendAttributes": "bool?",
-      "mqttOptions": [
-      {
-        "username": "str",
-        "password": "str"
-      }
-    ]
+      "sendAttributes": "bool?"
     }
   }
 }
