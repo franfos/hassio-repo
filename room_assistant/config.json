@@ -1,6 +1,6 @@
 {
   "name": "room-assistant",
-  "version": "2.13.0",
+  "version": "2.13.1",
   "slug": "room_assistant",
   "description": "Presence tracking and more for automation on the room-level",
   "url": "https://www.room-assistant.io",
@@ -34,82 +34,8 @@
     "6415/tcp": "HTTP API",
     "6425/udp": "Internal communication between instances"
   },
-  "options": {
-    "global": {
-      "instanceName": "mio",
-      "integrations": [
-        "homeAssistant"
-      ]
-    },
-    "cluster": {
-      "peerAddresses": []
-    },
-    "bluetoothLowEnergy": {
-      "allowlist": [],
-      "denylist": [],
-      "whitelist": []
-    },
-    "bluetoothClassic": {
-      "addresses": []
-    },
-    "omronD6t": {},
-    "gridEye": {},
-    "homeAssistant": {
-      "mqttOptions": []
-    }
-  },
-  "schema": {
-    "global": {
-      "instanceName": "str",
-      "integrations": ["str"]
-    },
-    "cluster": {
-      "networkInterface": "str?",
-      "port": "port?",
-      "timeout": "int(1,)?",
-      "weight": "int?",
-      "quorum": "int(1,)?",
-      "autoDiscovery": "bool?",
-      "peerAddresses": ["str?"]
-    },
-    "bluetoothLowEnergy": {
-      "hciDeviceId": "int(0,)?",
-      "allowlist": ["str?"],
-      "allowlistRegex": "bool?",
-      "denylist": ["str?"],
-      "denylistRegex": "bool?",
-      "processIBeacon": "bool?",
-      "onlyIBeacon": "bool?",
-      "majorMask": "int?",
-      "minorMask": "int?",
-      "batteryMask": "int?",
-      "timeout": "int(1,)?",
-      "updateFrequency": "int(0,)?",
-      "maxDistance": "int?",
-      "whitelist": ["str?"]
-    },
-    "bluetoothClassic": {
-      "addresses": ["str?"],
-      "hciDeviceId": "int(0,)?",
-      "interval": "int(1,)?",
-      "scanTimeLimit": "int(1,)?",
-      "timeoutCycles": "int(1,)?",
-      "preserveState": "bool?",
-      "inquireFromStart": "bool?"
-    },
-    "omronD6t": {
-      "busNumber": "int(0,)?",
-      "address": "int?",
-      "deltaThreshold": "float?"
-    },
-    "gridEye": {
-      "busNumber": "int(0,)?",
-      "address": "int?",
-      "deltaThreshold": "float?"
-    },
-    "homeAssistant": {
-      "mqttUrl": "str?",
-      "sendAttributes": "bool?"
-    }
-  }
+  "map": [
+    "config:rw"
+  ],
+  "schema": false
 }
